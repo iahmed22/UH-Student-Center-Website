@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UH-Sugar-Land-Student-Center-Webpage</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Imports -->
+  <link href="https://fonts.googleapis.com/css?family=League+Gothic" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Padauk" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Antonio" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Manrope" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!-- Top Bar -->
+<div class="top-bar">
+    <div class="top-bar-left">
+      <img src="logo.png" alt="Logo" class="logo" />
+      <span class="site-name">SUGAR LAND</span>
+    </div>
+    <div class="top-bar-right">
+      <button class="search-icon-btn">
+        <img src="Search.png" alt="Search" />
+      </button>
+    </div>
+  </div>
+  
+      
+      <!-- Navigation -->
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="faq.html">About</a></li>
+            <li><a href="rooms.html">Campus</a></li>
+          </ul>
+        </nav>
+
+        
+  <section class="booking-form-section">
+    <h2>Booking Form</h2>
+    <form action="submit-booking.php" method="POST" class="booking-form">
+      <label for="room">Room Name:</label>
+      <input type="text" id="room" name="room" required readonly />
+
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Time Slot:</label>
+      <input type="time" id="time" name="time" required />
+
+      <button type="submit" class="submit-btn">Submit Booking</button>
+    </form>
+  </section>
+
+  <script>
+    // Grab "room" from URL params
+    const params = new URLSearchParams(window.location.search);
+    const room = params.get("room");
+
+    // Fill in the room input if present
+    if (room) {
+      document.getElementById("room").value = decodeURIComponent(room);
+    }
+  </script>
+</body>
+</html>
