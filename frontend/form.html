@@ -29,7 +29,7 @@
   </div>
   
       
-      <!-- Navigation -->
+    <!-- Navigation -->
         <nav>
           <ul class="menu">
             <li><a href="index.html">Home</a></li>
@@ -37,8 +37,9 @@
             <li><a href="rooms.html">Campus</a></li>
           </ul>
         </nav>
-
-        
+ 
+ <!-- Form -->
+     
   <section class="booking-form-section">
     <h2>Booking Form</h2>
     <form action="submit-booking.php" method="POST" class="booking-form">
@@ -61,15 +62,16 @@
     </form>
   </section>
 
+  <!-- Auto Fill Room Script -->
+  
   <script>
-    // Grab "room" from URL params
     const params = new URLSearchParams(window.location.search);
     const room = params.get("room");
 
-    // Fill in the room input if present
     if (room) {
       document.getElementById("room").value = decodeURIComponent(room);
     }
   </script>
+
 </body>
 </html>
