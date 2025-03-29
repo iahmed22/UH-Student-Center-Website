@@ -1,7 +1,6 @@
 # CIS-2336-SP25-Project
-# UH Sugar Land Student Center Webpage
-About the Project
-A page designed for the UHSL Student Center. The webpage features a homepage, faq page, and room booking page. 
+
+A web page designed for the UHSL Student Center. The webpage features a homepage, faq page, and room booking page. 
 
 
 ## 🛠 Technologies Used
@@ -16,15 +15,18 @@ JavaScript
 
 ## 💻 Installation
 
-To run the project locally:
-
-git clone https://github.com/your-username/UH-Sugar-Land-Student-Center-Webpage.git
+git clone https://github.com/CIS-UH/semester-project-iahmed22.git
 cd UH-Sugar-Land-Student-Center-Webpage
 
-Then open a live server using the visual studio code extension
+Then open a live server using the Visual Studio Code extension
+
+## Lessons Learned:
+
+How to effectively use HTML and CSS to create a functional webpage.
 
 ## 🙌 Credits
-UI/UX Design: [Your Name]
+
+Author: Ibrahim Ahmed
 
 Fonts provided by Google Fonts
 
