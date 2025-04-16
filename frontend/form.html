@@ -11,12 +11,12 @@
   <link href="https://fonts.googleapis.com/css?family=Padauk" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Antonio" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Manrope" rel="stylesheet" />
-
 </head>
+
 <body>
 
-    <!-- Top Bar -->
-<div class="top-bar">
+  <!-- Top Bar -->
+  <div class="top-bar">
     <div class="top-bar-left">
       <img src="logo.png" alt="Logo" class="logo" />
       <span class="site-name">SUGAR LAND</span>
@@ -28,21 +28,19 @@
     </div>
   </div>
   
-      
-    <!-- Navigation -->
-        <nav>
-          <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="faq.html">About</a></li>
-            <li><a href="rooms.html">Campus</a></li>
-          </ul>
-        </nav>
- 
- <!-- Form -->
-     
+  <!-- Navigation -->
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="faq.html">About</a></li>
+      <li><a href="rooms.html">Campus</a></li>
+    </ul>
+  </nav>
+
+  <!-- Booking Form -->
   <section class="booking-form-section">
     <h2>Booking Form</h2>
-    <form action="submit-booking.php" method="POST" class="booking-form">
+    <form id="booking-form" class="booking-form">
       <label for="room">Room Name:</label>
       <input type="text" id="room" name="room" required readonly />
 
@@ -62,15 +60,44 @@
     </form>
   </section>
 
-  <!-- Auto Fill Room Script -->
-  
+  <!-- ✅ JavaScript logic placed at the bottom -->
   <script>
+    // Auto-fill room field from query param
     const params = new URLSearchParams(window.location.search);
     const room = params.get("room");
-
     if (room) {
       document.getElementById("room").value = decodeURIComponent(room);
     }
+
+    // Form submission using fetch
+    const form = document.getElementById('booking-form');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+
+      try {
+        const response = await fetch('http://localhost:3000/submit-booking', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          alert(result.message);
+          form.reset();
+        } else {
+          alert(result.message);
+        }
+      } catch (err) {
+        console.error(err);
+        alert('Something went wrong. Please try again later.');
+      }
+    });
   </script>
 
 </body>
