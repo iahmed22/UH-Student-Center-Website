@@ -60,7 +60,6 @@
     </form>
   </section>
 
-  <!-- ✅ JavaScript logic placed at the bottom -->
   <script>
     // Auto-fill room field from query param
     const params = new URLSearchParams(window.location.search);
@@ -69,7 +68,7 @@
       document.getElementById("room").value = decodeURIComponent(room);
     }
 
-    // Form submission using fetch
+    // Fetch
     const form = document.getElementById('booking-form');
 
     form.addEventListener('submit', async (e) => {
