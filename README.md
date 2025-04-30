@@ -16,7 +16,12 @@ JavaScript
 ## 💻 Installation
 
 git clone https://github.com/CIS-UH/semester-project-iahmed22.git
+
 cd UH-Sugar-Land-Student-Center-Webpage
+
+run node.js:
+1) cd Project\semester-project-iahmed22\backend
+2) node app.js
 
 Then open a live server using the Visual Studio Code extension
 
