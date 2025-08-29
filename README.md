@@ -1,42 +1,43 @@
 # CIS-2336-SP25-Project
 
-A web page designed for the UHSL Student Center. The webpage features a homepage, faq page, and room booking page. 
-
+A web page designed for the **UHSL Student Center**. The webpage features a **homepage**, **FAQ page**, and **room booking page**.  
 
 ## 🛠 Technologies Used
+- **HTML5**  
+- **CSS3**  
+- **JavaScript**  
+- **Google Fonts** – Antonio, Raleway, League Gothic, Padauk  
 
-HTML5
+---
 
-CSS3
+## 💻 Installation & Setup
 
-Google Fonts – Antonio, Raleway, League Gothic, Padauk
+### 1. Clone the repository:
+git clone [https://github.com/CIS-UH/semester-project-iahmed22.git](https://github.com/CIS-UH/semester-project-iahmed22.git)
 
-JavaScript 
+### 2. Run the backend:
+1) cd UH-Student-Center-Website-main\backend
+2) npm install
+3) node app.js
 
-## 💻 Installation
+### 3. Run the frontend:
+4) Open index.html in Visual Studio Code.
+5) Right-click the file and select "Open with Live Server" (requires the Live Server extension).
 
-git clone https://github.com/CIS-UH/semester-project-iahmed22.git
+---
 
-cd UH-Sugar-Land-Student-Center-Webpage
+## 📚 Lessons Learned:
 
-run node.js:
-1) cd Project\semester-project-iahmed22\backend
-2) node app.js
+- How to effectively use HTML and CSS to create a functional and visually appealing webpage
+- Integrating JavaScript to enhance user interactivity
 
-Then open a live server using the Visual Studio Code extension
-
-## Lessons Learned:
-
-How to effectively use HTML and CSS to create a functional webpage.
+---
 
 ## 🙌 Credits
 
-Author: Ibrahim Ahmed
-
-Fonts provided by Google Fonts
-
-Images: University of Houston branding assets
-
-Inspired by UH Sugar Land’s official website layout
+- Author: Ibrahim Ahmed
+- Fonts: Google Fonts
+- Images: University of Houston branding assets
+- Inspiration: UH Sugar Land official website layout
 
 
