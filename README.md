@@ -11,33 +11,16 @@ A refreshed student-center website for the University of Houston Sugar Land camp
 - Handling duplicate bookings and availability checks in memory
 - Adding responsive layouts, hover states, focus states, and reduced-motion support
 
-## Visual Showcase
+## Preview
 
-### Landing Page
+The project’s current pages are available here when the local server is running:
 
-<p align="center">
-	<img src="frontend/assets/images/mission-banner.jpg" alt="UH Sugar Land campus hero view" width="900">
-</p>
+- [Landing page](frontend/index.html)
+- [About and FAQ page](frontend/pages/about.html)
+- [Room directory](frontend/pages/rooms.html)
+- [Booking form](frontend/pages/booking.html)
 
-### About UH Sugar Land
-
-<p align="center">
-	<img src="frontend/assets/images/campus-banner.png" alt="UH Sugar Land campus at dusk" width="900">
-</p>
-
-<p align="center">
-	<img src="frontend/assets/images/student-center.png" alt="UH Sugar Land Student Center" width="440">
-</p>
-
-### Room Booking
-
-<p align="center">
-	<img src="frontend/assets/images/meeting-room-1.png" alt="Meeting room with tables and chairs" width="280">
-	<img src="frontend/assets/images/meeting-room-2.png" alt="Second meeting room" width="280">
-	<img src="frontend/assets/images/study-room-1.png" alt="Study room with collaborative seating" width="280">
-</p>
-
-These are the local visual assets used by the live pages. Full-page browser screenshots are not included yet because the attached images are chat previews rather than files stored in the repository.
+The Figma/browser screenshots are kept as design references rather than being incorrectly represented by individual source photos in this README. To add the exact screenshots later, place exported files in `docs/screenshots/` and link those files here.
 
 ## Project Structure
 
