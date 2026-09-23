@@ -27,7 +27,6 @@ A refreshed student-center website for the University of Houston Sugar Land camp
 
 <p align="center">
 	<img src="frontend/assets/images/student-center.png" alt="UH Sugar Land Student Center" width="440">
-	<img src="frontend/assets/images/campus-detail.png" alt="UH Sugar Land campus building detail" width="440">
 </p>
 
 ### Room Booking
@@ -38,7 +37,7 @@ A refreshed student-center website for the University of Houston Sugar Land camp
 	<img src="frontend/assets/images/study-room-1.png" alt="Study room with collaborative seating" width="280">
 </p>
 
-The screenshots in the original Figma direction are represented here with the same local assets used by the live pages, so the showcase remains portable and does not depend on chat attachments.
+These are the local visual assets used by the live pages. Full-page browser screenshots are not included yet because the attached images are chat previews rather than files stored in the repository.
 
 ## Project Structure
 
