@@ -13,14 +13,36 @@ A refreshed student-center website for the University of Houston Sugar Land camp
 
 ## Preview
 
-The project’s current pages are available here when the local server is running:
+### Home
+
+<p align="center">
+	<img src="docs/screenshots/home.png" alt="UH Sugar Land home page screenshot" width="900">
+</p>
+
+### About and FAQ
+
+<p align="center">
+	<img src="docs/screenshots/about.png" alt="UH Sugar Land About page screenshot" width="900">
+</p>
+
+### Room Directory
+
+<p align="center">
+	<img src="docs/screenshots/rooms.png" alt="UH Sugar Land room directory screenshot" width="900">
+</p>
+
+### Booking Form
+
+<p align="center">
+	<img src="docs/screenshots/booking.png" alt="UH Sugar Land booking form screenshot" width="900">
+</p>
+
+The project’s pages are also available here when the local server is running:
 
 - [Landing page](frontend/index.html)
 - [About and FAQ page](frontend/pages/about.html)
 - [Room directory](frontend/pages/rooms.html)
 - [Booking form](frontend/pages/booking.html)
-
-The Figma/browser screenshots are kept as design references rather than being incorrectly represented by individual source photos in this README. To add the exact screenshots later, place exported files in `docs/screenshots/` and link those files here.
 
 ## Project Structure
 
