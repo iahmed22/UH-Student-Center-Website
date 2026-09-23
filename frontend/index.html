@@ -3,46 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UH-Sugar-Land-Student-Center-Webpage</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Font Imports -->
-  <link href="https://fonts.googleapis.com/css?family=League+Gothic" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Padauk" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Antonio" rel="stylesheet" />
-
+  <title>UH Sugar Land | Student Center</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
 
-<!-- Top Bar -->
+<header class="site-header">
   <div class="top-bar">
     <div class="top-bar-left">
-      <img src="logo.png" alt="Logo" class="logo" />
+      <img src="assets/images/uh-logo.png" alt="UH Sugar Land logo" class="logo" />
       <span class="site-name">SUGAR LAND</span>
     </div>
     <div class="top-bar-right">
-      <button class="search-icon-btn">
-        <img src="Search.png" alt="Search" />
+      <button class="search-icon-btn" type="button" aria-label="Search" aria-expanded="false">
+        <img src="assets/images/search-icon.png" alt="" />
       </button>
+      <form class="site-search" role="search">
+        <label class="sr-only" for="site-search-input">Search this site</label>
+        <input id="site-search-input" type="search" placeholder="Search campus pages" autocomplete="off" />
+        <button type="submit">Go</button>
+        <p class="site-search-status" role="status"></p>
+      </form>
     </div>
   </div>
-
-<!-- Navigation -->
   <nav>
     <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="faq.html">About</a></li>
-      <li><a href="rooms.html">Campus</a></li>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="pages/about.html">About</a></li>
+      <li><a href="pages/rooms.html">Campus</a></li>
     </ul>
   </nav>
+</header>
 
-<!-- Apply Section -->
 <div class="hero">
   <div class="hero-content">
-    <h1>INNOVATION THROUGH EMPOWERMENT.</h1>
-    <button class="apply-btn">Apply Now</button>
+    <p class="eyebrow">University of Houston Sugar Land</p>
+    <h1>Innovation through empowerment.</h1>
+    <p>A student-centered campus built for connection, collaboration, and the next big idea.</p>
+    <a class="apply-btn" href="pages/about.html">Explore campus</a>
   </div>
 </div>
+
+<section class="home-intro">
+  <div>
+    <p class="eyebrow">Your campus, your way</p>
+    <h2>Make space for what comes next.</h2>
+  </div>
+  <div>
+    <p>Find a quiet corner to focus, a room to bring people together, or a new place to feel at home. Sugar Land gives every student room to move forward.</p>
+    <div class="home-links">
+      <a class="text-link" href="pages/rooms.html">Reserve a room</a>
+      <a class="text-link" href="pages/about.html">Learn about UHSL</a>
+    </div>
+  </div>
+</section>
+<script src="assets/js/site.js" defer></script>
 
 </body>

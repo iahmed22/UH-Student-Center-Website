@@ -3,43 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UH-Sugar-Land-Student-Center-Webpage</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Font Imports -->
-  <link href="https://fonts.googleapis.com/css?family=League+Gothic" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Padauk" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Antonio" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Manrope" rel="stylesheet" />
-
+  <title>Reserve a Room | UH Sugar Land</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 
 <body>
 
-  <!-- Top Bar -->
+<header class="site-header">
 <div class="top-bar">
   <div class="top-bar-left">
-    <img src="logo.png" alt="Logo" class="logo" />
+    <img src="../assets/images/uh-logo.png" alt="UH Sugar Land logo" class="logo" />
     <span class="site-name">SUGAR LAND</span>
   </div>
   <div class="top-bar-right">
-    <button class="search-icon-btn">
-      <img src="Search.png" alt="Search" />
+    <button class="search-icon-btn" type="button" aria-label="Search" aria-expanded="false">
+      <img src="../assets/images/search-icon.png" alt="" />
     </button>
+    <form class="site-search" role="search">
+      <label class="sr-only" for="site-search-input">Search this site</label>
+      <input id="site-search-input" type="search" placeholder="Search campus pages" autocomplete="off" />
+      <button type="submit">Go</button>
+      <p class="site-search-status" role="status"></p>
+    </form>
   </div>
 </div>
 
     
-    <!-- Navigation -->
       <nav>
         <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="faq.html">About</a></li>
-          <li><a href="rooms.html">Campus</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="rooms.html" aria-current="page">Campus</a></li>
         </ul>
       </nav>
-
-    <!-- Room Booking Forum -->
+</header>
 
   <section class="room-reservation-section">
     <h2>Reserve a Room at our Sugar Land Campus</h2>
@@ -47,7 +44,7 @@
   
     <!-- Room 1 -->
     <div class="room-card">
-      <img src="room.png" alt="Room Image" class="room-image">
+      <img src="../assets/images/meeting-room-1.png" alt="Meeting Room 1" class="room-image">
       <div class="room-info">
         <h3>Meeting Room #1</h3>
         <div class="room-tags">
@@ -56,13 +53,13 @@
         </div>
       </div>
       <div class="room-action">
-        <a href="form.html?room=Meeting Room #1" class="book-btn">Book Now</a>
+        <a href="booking.html?room=Meeting Room #1" class="book-btn">Book Now</a>
       </div>
     </div>
   
     <!-- Room 2 -->
     <div class="room-card">
-      <img src="image 10.png" alt="Room Image" class="room-image">
+      <img src="../assets/images/meeting-room-2.png" alt="Meeting Room 2" class="room-image">
       <div class="room-info">
         <h3>Meeting Room #2</h3>
         <div class="room-tags">
@@ -71,13 +68,13 @@
         </div>
       </div>
       <div class="room-action">
-        <a href="form.html?room=Meeting Room #2" class="book-btn">Book Now</a>
+        <a href="booking.html?room=Meeting Room #2" class="book-btn">Book Now</a>
       </div>
     </div>
   
     <!-- Room 3 -->
     <div class="room-card">
-      <img src="image 7.png" alt="Room Image" class="room-image">
+      <img src="../assets/images/study-room-1.png" alt="Study Room 1" class="room-image">
       <div class="room-info">
         <h3>Study Room #1</h3>
         <div class="room-tags">
@@ -86,13 +83,13 @@
         </div>
       </div>
       <div class="room-action">
-        <a href="form.html?room=Study Room #1" class="book-btn">Book Now</a>
+        <a href="booking.html?room=Study Room #1" class="book-btn">Book Now</a>
       </div>
     </div>
   
     <!-- Room 4 -->
     <div class="room-card">
-      <img src="image 8.png" alt="Room Image" class="room-image">
+      <img src="../assets/images/study-room-2.png" alt="Study Room 2" class="room-image">
       <div class="room-info">
         <h3>Study Room #2</h3>
         <div class="room-tags">
@@ -101,13 +98,13 @@
         </div>
       </div>
       <div class="room-action">
-        <a href="form.html?room=Study Room #2" class="book-btn">Book Now</a>
+        <a href="booking.html?room=Study Room #2" class="book-btn">Book Now</a>
       </div>
     </div>
   
     <!-- Room 5 -->
     <div class="room-card">
-      <img src="image 9.png" alt="Room Image" class="room-image">
+      <img src="../assets/images/study-room-3.png" alt="Study Room 3" class="room-image">
       <div class="room-info">
         <h3>Study Room #3</h3>
         <div class="room-tags">
@@ -116,11 +113,12 @@
         </div>
       </div>
       <div class="room-action">
-        <a href="form.html?room=Study Room #3" class="book-btn">Book Now</a>
+        <a href="booking.html?room=Study Room #3" class="book-btn">Book Now</a>
       </div>
     </div>
   
   </section>
 
+<script src="../assets/js/site.js" defer></script>
 </body>
 </html>
