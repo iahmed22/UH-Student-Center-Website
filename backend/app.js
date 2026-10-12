@@ -9,7 +9,7 @@ const PORT = 3000;
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '../frontend')));
+app.use(express.static(path.join(__dirname, '../docs')));
 
 // In-memory storage
 const bookings = {}; // Format: { "room_date_time": { ...bookingData } }

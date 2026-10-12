@@ -18,7 +18,7 @@ UH-Student-Center-Website/
 ├── backend/
 │   ├── app.js            # Express API for room bookings
 │   └── package.json      # Backend dependencies and scripts
-├── frontend/
+├── docs/
 │   ├── index.html        # Landing page and frontend entry point
 │   ├── pages/
 │   │   ├── about.html    # Campus overview and FAQ
@@ -27,6 +27,7 @@ UH-Student-Center-Website/
 │   └── assets/
 │       ├── css/style.css # Shared responsive design system
 │       ├── js/booking.js  # Form submission and API connection
+│       ├── js/config.js   # Hosted booking API URL
 │       └── images/        # Named campus and UI image assets
 └── README.md
 ```
@@ -43,9 +44,11 @@ npm start
 
 Open `http://localhost:3000` after the server starts. Express serves both the frontend and booking API from the same origin.
 
-### 2. Open the frontend
+### 2. Publish with GitHub Pages
 
-The frontend can still be opened with VS Code Live Server, but the recommended workflow is `npm start` because it keeps the pages and API together. The landing page remains at the frontend root so it is still easy to discover.
+In the repository's **Settings → Pages**, select the `main` branch and `/docs` as the publishing folder. The pages and their assets use relative paths and can be served directly by GitHub Pages.
+
+GitHub Pages only hosts static files; it does not run the Express backend. To accept bookings on the published site, deploy `backend/` to a Node.js host, then set `window.BOOKING_API_BASE_URL` in `docs/assets/js/config.js` to the backend's base URL (for example, `https://your-service.example.com`). Until that is configured, the booking form displays that the service is unavailable. The backend continues to run locally at `http://localhost:3000` during development.
 
 ### 3. Try the booking flow
 
@@ -74,5 +77,3 @@ The refresh keeps the original mockup direction recognizable: UH branding, red n
 - Fonts: Antonio and Manrope via Google Fonts
 - Images: University of Houston branding and campus assets
 - Inspiration: UH Sugar Land website layout and original Figma mockups
-
-
